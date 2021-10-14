@@ -18,11 +18,18 @@ npm install -g npm@latest
 ```sh
 git clone https://github.com/vidhik2002/Weather-CLI.git
 ```
-
-
 3. Create a env.json file
 ```sh
 {
     "key": "<YOUR_API_KEY>"
 }
+```
+4. Run the command 
+```sh
+npm i
+```
+
+#### Usage
+```sh
+node app.js <city_name>
 ```
