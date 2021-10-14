@@ -20,17 +20,13 @@ git clone https://github.com/vidhik2002/Weather-CLI.git
 ```
 3.Move into folder
 ```sh
-cd Weather_CLI
+cd Weather-CLI
 ```
 4. Create a env.json file
 ```sh
 {
     "key": "<YOUR_API_KEY>"
 }
-```
-5. Run the command 
-```sh
-npm i
 ```
 
 #### Usage
