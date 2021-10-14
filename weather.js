@@ -10,5 +10,12 @@ function fetchWeather(city){
     };  
     const url = "https://api.openweathermap.org/data/2.5/weather?q="+queryParameters.q+"&appid="+queryParameters.appid; 
     console.log(url)
+    try {
+        const request = https.get(url, (res) => {
+            console.log(res.statusCode)
+        })
+    } catch (err) {
+        console.log(err);
+    }
 }
 module.exports = fetchWeather;
