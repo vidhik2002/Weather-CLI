@@ -33,3 +33,4 @@ npm i
 ```sh
 node app.js <city_name>
 ```
+![Working](https://i.imgur.com/CDEaznv.png)
