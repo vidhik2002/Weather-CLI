@@ -17,12 +17,12 @@ function fetchWeather(city){
                 });
                 res.on("end", () => {
                     const data = JSON.parse(body);
-                    console.log("Weather Type: "+data.weather[0].main)
-                    console.log("Temperature: "+data.main.temp);
-                    console.log("Feels_Like: "+data.main.feels_like);
-                    console.log("Minimum Temperature: "+data.main.temp_min);
-                    console.log("Maximum Temperature: " + data.main.temp_max);
-                    console.log("Humidity: " + data.main.humidity);
+                    console.log("\x1B[33mWeather Type: " + data.weather[0].main);
+                    console.log("\x1b[35mTemperature: " + data.main.temp);
+                    console.log("\x1b[36mFeels_Like: " + data.main.feels_like);
+                    console.log("\x1b[32mMinimum Temperature: "+data.main.temp_min);
+                    console.log("\x1b[31mMaximum Temperature: " + data.main.temp_max);
+                    console.log("\x1b[34mHumidity: " + data.main.humidity+"\x1b[0m");
                 })
             }else{
                 console .log("something went wrong")
